@@ -7,7 +7,7 @@ colors = set()
 
 def populate_colors():
     print("generating color set")
-    for i in range(16777216):
+    for i in range(16777216): # 16777216 is #FFFFFF (since range is non-inclusive)
         colors.add('#{0:06x}'.format(i))
 
 
